@@ -307,7 +307,8 @@ footer img{
         text-align: center;
     }
     footer img{
-        text-align: center;
+        display: block;
+        margin: 2em auto;
     }
 }
 @media screen and (max-width:360px) {
