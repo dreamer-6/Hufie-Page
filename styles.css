@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Sora", sans-serif;
 }
 /*header section*/
@@ -37,17 +38,20 @@ nav{
     background-color: #20673d;
 }
 /*hero section*/
+
 #hero-sec{
     background-color: aliceblue;
-}
-#hero-sec{
     display: flex;
     padding-left: 5em;
+    position: relative;
+    overflow: hidden;
 }
 .info-sec{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 50%;
+    position: relative;
 }
 .version{
     background-color: #dee9fc;
@@ -55,6 +59,7 @@ nav{
     max-width: 200px;
     padding: 1em 0.5em;
     border-radius: 50px;
+    margin:3em 0 0;
 }
 .info-sec span{
     background-color: #6281f7;
@@ -64,7 +69,7 @@ nav{
     margin-right: 10px;
 }
 .info-sec h1{
-    font-size: 6rem;
+    font-size: 5rem;
     font-weight: 600;
     margin: 1em 0 0;
     color: #364153;
@@ -75,7 +80,178 @@ nav{
     color: #364153;
     margin: 1em 0;
 }
-.image-sec{
+.image-sec img{
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    z-index: 1;
+}
+/*process section*/
+.process{
+    background: url(resources/section_bg_1.png) no-repeat;
+    background-size: 100%;
+    background-color: #161739;
+    padding: 1em 2em;
+}
+.process-sec{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.process h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 3em 0 1em;
+    color: #fff;
+}
+.process p{
+    font-size: 1.5rem;
+    color:#a7d0da;
+    text-align: center;
+    margin-bottom: 4em;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+
+}
+.image-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    margin: 2em;
+    max-width: 150px;
+    border-radius: 10px;
+    transition: transform 0.4s ease-in;
+}
+.image-bg:hover{
+    transform: scale(1.15);
+}
+.image-bg span{
+    font-size: 4rem;
+}
+.box .img-title{
+    color: #fff;
+    margin: 1em 3em;
+}
+.box .img-desc{
+    padding: 1em;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+/* separete bg color*/
+.image-bg.blue{
+    background-color: #6281f7;
+}
+.image-bg.yellow{
+    background-color: #f5c044;
+}
+.image-bg.green{
+    background-color: #5db082;
+}
+.image-bg.purple{
+    background-color: #6d4ae5;
+}
+/*3rd section*/
+#projects{
+    padding:0 5em;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.project.section-img{
     width: 100%;
-    position: relative;
+}
+.project-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin: 5em 2em;
+}
+.project-info p{
+    color: #425263;
+    font-size: 1.3rem;
+    margin-right: 50px;
+}
+.highlight{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+}
+.project-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.icon{
+    font-size: 2rem;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50px;
+}
+/*icon separete color*/
+.icon.blue{
+    background-color: #6281f7;
+}
+.icon.yellow{
+    background-color: #f5c044;
+}
+.icon.purple{
+    background-color: #6d4ae5;
+}
+/*flex arrange*/
+.style{
+    flex-direction: row-reverse;
+}
+
+/*footer section*/
+footer{
+    background-color: #161739;
+    color: #fff;
+    padding: 5em 0;
+
+}
+.foot-sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.foot-title h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-right: 6em;
+    margin-left: 2em;
+}
+.high{
+    color: #5db082;
+}
+.foot-basic, .category{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    margin-right: 10em;
+}
+.foot-basic a, .category a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+footer img{
+    width: 150px;
+    margin:5em 5em 2em;
 }
