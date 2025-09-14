@@ -141,12 +141,12 @@ body{
 }
 .box .img-title{
     color: #fff;
-    margin: 1em 3em;
+    margin: 1em;
+    font-size: 1.5rem;
 }
 .box .img-desc{
     padding: 1em;
-    font-size: 1.5rem;
-    text-align: justify;
+    font-size: 1rem;
 }
 /* separete bg color*/
 .image-bg.blue{
@@ -183,7 +183,7 @@ body{
 }
 .project-info p{
     color: #425263;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-right: 50px;
 }
 .highlight{
@@ -194,7 +194,7 @@ body{
     font-size: 1rem;
 }
 .project-title{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 .icon{
