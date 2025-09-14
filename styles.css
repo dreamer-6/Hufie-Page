@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sora", sans-serif;
+}
+/*header section*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 5em;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+}
+.account{
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.login{
+    background-color: #fff;
+    color: #000;
+}
+.signup{
+    background-color: #295e48;
+    color: #fff;
+    margin-left: 1em;
+}
+.login:hover{
+    color: #5db082;
+}
+.signup:hover{
+    background-color: #20673d;
+}
+/*hero section*/
+#hero-sec{
+    background-color: aliceblue;
+}
+#hero-sec{
+    display: flex;
+    padding-left: 5em;
+}
+.info-sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.version{
+    background-color: #dee9fc;
+    display: inline-block;
+    max-width: 200px;
+    padding: 1em 0.5em;
+    border-radius: 50px;
+}
+.info-sec span{
+    background-color: #6281f7;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    padding: 1em;
+    margin-right: 10px;
+}
+.info-sec h1{
+    font-size: 6rem;
+    font-weight: 600;
+    margin: 1em 0 0;
+    color: #364153;
+}
+.sub{
+    font-size: 2rem;
+    font-weight: 300;
+    color: #364153;
+    margin: 1em 0;
+}
+.image-sec{
+    width: 100%;
+    position: relative;
+}
